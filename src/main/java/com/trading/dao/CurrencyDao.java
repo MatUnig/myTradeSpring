@@ -16,13 +16,15 @@ public class CurrencyDao {
     @PersistenceContext
     EntityManager entityManager;
 
-    public List<Currency> getAll(){
+    public List<Currency> getAll() {
         Query q = entityManager.createQuery("SELECT shortName from Currency x");
         return q.getResultList();
     }
+
     public void save(Currency currency) {
         entityManager.persist(currency);
     }
+
     public Currency findById(long id) {
         return entityManager.find(Currency.class, id);
     }
@@ -35,5 +37,5 @@ public class CurrencyDao {
         entityManager.remove(entityManager.contains(entity) ?
                 entity : entityManager.merge(entity));
     }
-    
+
 }

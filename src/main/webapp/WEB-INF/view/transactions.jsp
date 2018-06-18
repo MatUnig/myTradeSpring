@@ -15,7 +15,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/table.css">
 </head>
-
 <body>
 <%@include file="header.jsp" %>
 <form action="/close" method="post">
@@ -40,7 +39,7 @@
             <article class="row fadeIn nfl">
                 <ul>
                     <li>${trans.product}</li>
-                    <%--<li>${trans.date}</li>--%>
+                        <%--<li>${trans.date}</li>--%>
                     <li>${trans.quantity}</li>
                     <li>${trans.price}</li>
                     <li>${trans.currentPrice}</li>

@@ -28,20 +28,21 @@
             </main>
             <!-- Row 1 - fadeIn -->
             <c:forEach items="${list}" var="list">
-            <section class="row-fadeIn-wrapper">
-                <article class="row fadeIn nfl">
-                    <ul>
-                        <li>${list.name}</li>
-                        <li>${list.shortName}</li>
-                        <li>${list.symbol}</li>
-                    </ul>
-                    <ul class="more-content">
-                        <li>Click <a href="/picker">here</a> to pick a product and trade!</li>
-                    </ul>
-                </article>
-            </section>
+                <section class="row-fadeIn-wrapper">
+                    <article class="row fadeIn nfl">
+                        <ul>
+                            <li>${list.name}</li>
+                            <li>${list.shortName}</li>
+                            <li>${list.symbol}</li>
+                        </ul>
+                        <ul class="more-content">
+                            <li>Click <a href="/picker">here</a> to pick a product and trade!</li>
+                        </ul>
+                    </article>
+                </section>
             </c:forEach>
-            If you have suggestions for future products to trade feel free to mail on address: <a href="mailto:request@myTrade.com?Subject=ProductRequest" target="_top">request@myTrade.com</a>
+            If you have suggestions for future products to trade feel free to mail on address: <a
+                href="mailto:request@myTrade.com?Subject=ProductRequest" target="_top">request@myTrade.com</a>
         </section>
 
     </div>
@@ -56,7 +57,7 @@
             <p>
                 Admin Panel</br>
                 <a href="/currencies">Manage currencies</a>
-                <%--<a href="/users">Manage users</a>--%>
+                    <%--<a href="/users">Manage users</a>--%>
                 </sec:authorize>
             </p>
             <hr class="style-four">

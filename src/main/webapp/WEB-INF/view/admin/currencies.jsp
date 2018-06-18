@@ -25,7 +25,9 @@
                 <td class="tg-yw4l">${currency.name}</td>
                 <td class="tg-yw4l">${currency.shortName}</td>
                 <td class="tg-yw4l">${currency.symbol}</td>
-                <td class="tg-yw4l"><button type="submit" name="close" value="${currency.id}">Remove</button></td>
+                <td class="tg-yw4l">
+                    <button type="submit" name="close" value="${currency.id}">Remove</button>
+                </td>
             </tr>
         </c:forEach>
     </table>

@@ -21,37 +21,30 @@ public class CurrencyRespositoryTest {
     @Autowired
     private CurrencyRespository currencyRespository;
 
-//    @Test
-//    public void findOneByShortName() {
-//    }
-//
-//    @Test
-//    public void findBySome() {
-//    }
-//    @Test
-//    public void find_by_short_name_then_return_currency(){
-//        //given
-//        Currency currency = new Currency();
-//        currency.setShortName("Bin");
-//        entityManager.persist(currency);
-//        //when
-//        Currency result = currencyRespository.findOneByShortName("Bin");
-//        //then
-//        assertEquals(result.getShortName(),currency.getShortName());
-//    }
-//    @Test
-//    public void add_one_to_database_then_found_all_and_result_equals_one(){
-//        //given
-//        Currency currency = new Currency();
-//        currency.setName("Pounds");
-//        currency.setShortName("GBP");
-//        //then
-//        entityManager.persist(currency);
-//        //then
-//        List<Currency> currencies = currencyRespository.findAll();
-//        //then
-//        assertEquals(1,currencies.size());
-//    }
+    @Test
+    public void find_by_short_name_then_return_currency(){
+        //given
+        Currency currency = new Currency();
+        currency.setShortName("Bin");
+        entityManager.persist(currency);
+        //when
+        Currency result = currencyRespository.findOneByShortName("Bin");
+        //then
+        assertEquals(result.getShortName(),currency.getShortName());
+    }
+    @Test
+    public void add_one_to_database_then_find_all_and_result_equals_one(){
+        //given
+        Currency currency = new Currency();
+        currency.setName("Pounds");
+        currency.setShortName("GBP");
+        //then
+        entityManager.persist(currency);
+        //then
+        List<Currency> currencies = currencyRespository.findAll();
+        //then
+        assertEquals(1,currencies.size());
+    }
     @Test
     public void add_one_to_database_then_find_eur(){
         //given

@@ -29,22 +29,22 @@
                     </div>
                     <div class="panel-body">
                         <form name="login" action="/login"
-                                   method="POST">
+                              method="POST">
                             <div class="form-group">
                                 <label path="username" class="col-sm-3 control-label">
-                                    </label>
+                                </label>
                                 <div class="col-sm-6">
                                     <input type="text" path="username" name="username" class="form-control"
-                                                id="username" placeholder="Login"/>
+                                           id="username" placeholder="Login"/>
                                     <errors path="username" name="username" id="username"/>
                                 </div>
                             </div>
                             <div class="form-group">
-                                <label  path="password" class="col-sm-3 control-label">
-                                    </label>
+                                <label path="password" class="col-sm-3 control-label">
+                                </label>
                                 <div class="col-sm-6">
                                     <input type="password" path="password" name="password" class="form-control"
-                                                id="password" placeholder="Password"/>
+                                           id="password" placeholder="Password"/>
                                     <errors path="password" name="password" id="password"/>
                                 </div>
                             </div>
@@ -54,7 +54,8 @@
                                         <input type="hidden"
                                                name="${_csrf.parameterName}"
                                                value="${_csrf.token}"/>
-                                        Sign in</button>
+                                        Sign in
+                                    </button>
                                     <button type="reset" name="login" class="btn btn-default btn-sm">
                                         Reset
                                     </button>

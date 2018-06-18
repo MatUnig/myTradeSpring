@@ -24,7 +24,7 @@
                                method="post">
                     <div class="form-group">
                         <form:label for="inputName" path="name" class="col-sm-3 control-label center">
-                            </form:label>
+                        </form:label>
                         <div class="col-sm-6">
                             <form:input type="text" path="name" name="name" class="form-control" id="name"
                                         placeholder="Name"/>
@@ -77,7 +77,7 @@
                         </div>
                     </div>
                 </div>
-                    </form:form>
+                </form:form>
                 <a href="/">Home</a>
 
 

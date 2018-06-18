@@ -11,7 +11,7 @@
 </head>
 <body>
 <%@include file="header.jsp" %>
-    You have been logged out. Thank you for trading ${userName}
-    If you want to visit homepage click <a href="/">here</a>
+You have been logged out. Thank you for trading ${userName}
+If you want to visit homepage click <a href="/">here</a>
 </body>
 </html>

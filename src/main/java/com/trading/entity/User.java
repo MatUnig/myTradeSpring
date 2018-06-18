@@ -30,7 +30,7 @@ public class User {
     @NotBlank
     private String password;
     @Column(precision = 12, scale = 2)
-    private double balance=10000;
+    private double balance = 10000;
     @OneToMany(mappedBy = "user", fetch = FetchType.LAZY)
     private List<Transaction> trans;
     private int enabled;

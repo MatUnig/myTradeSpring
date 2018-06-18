@@ -14,29 +14,30 @@
 <body>
 <%@include file="header.jsp" %>
 </br>
-    <div>
-        <h2>Choose a currency pair you want to trade:</h2>
-        <form action="/pickProduct">
-            <div class="sel">
+<div>
+    <h2>Choose a currency pair you want to trade:</h2>
+    <form action="/pickProduct">
+        <div class="sel">
             <select name="fromCurrency">
                 <option value="From Currency" disabled>From Currency</option>
                 <c:forEach items="${list}" var="shortName">
                     <option value="${shortName}">${shortName}</option>
                 </c:forEach>
             </select>
-            </div>
-                <div class="sel">
-                    <select name="toCurrency">
-                        <option value="To Currency" disabled>To Currency</option>
+        </div>
+        <div class="sel">
+            <select name="toCurrency">
+                <option value="To Currency" disabled>To Currency</option>
                 <c:forEach items="${list}" var="shortName">
                     <option value="${shortName}">${shortName}</option>
                 </c:forEach>
             </select>
-                </div></br>
-            <button type="submit" class="button"><span>Pick product</span></button>
-            <a class="button" href="/showTrans"><span>Show transactions</span></a>
-        </form>
-    </div>
+        </div>
+        </br>
+        <button type="submit" class="button"><span>Pick product</span></button>
+        <a class="button" href="/showTrans"><span>Show transactions</span></a>
+    </form>
+</div>
 </div>
 <%@include file="footer.jsp" %>
 </div>

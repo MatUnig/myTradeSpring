@@ -14,7 +14,7 @@
 <%@include file="header.jsp" %>
 <h1>Congratulations!</h1>
 <p>Account has been registered.
-If you want to proceed to log in click <a href="/loginPage">here!</a>
+    If you want to proceed to log in click <a href="/loginPage">here!</a>
 </p>
 </body>
 </html>

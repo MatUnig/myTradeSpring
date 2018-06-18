@@ -26,8 +26,9 @@ public class TransDaoImpl implements TransDao {
 
     @PersistenceContext
     EntityManager entityManager;
+
     @Override
-    public void buy (@AuthenticationPrincipal CurrentUser customUser, Transaction transaction, HttpServletRequest request) {
+    public void buy(@AuthenticationPrincipal CurrentUser customUser, Transaction transaction, HttpServletRequest request) {
         User currentUser = customUser.getUser();
         Transaction trans = new Transaction();
         trans.setDate(trans.getDate());
@@ -57,13 +58,13 @@ public class TransDaoImpl implements TransDao {
 
     }
 
-    public List<Transaction> getTrans(@AuthenticationPrincipal CurrentUser customUser){
+    public List<Transaction> getTrans(@AuthenticationPrincipal CurrentUser customUser) {
         User currentUser = customUser.getUser();
         return transactionRepository.findByUserId(currentUser.getId());
     }
 
     @Override
-    public Transaction applyChanges(Transaction transaction){
+    public Transaction applyChanges(Transaction transaction) {
         return entityManager.merge(transaction);
     }
 

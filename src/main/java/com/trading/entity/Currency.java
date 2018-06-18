@@ -13,7 +13,7 @@ public class Currency {
     @GeneratedValue
     private int id;
     private String name;
-    @Size(min=3, max =4)
+    @Size(min = 3, max = 4)
     private String shortName;
     private String symbol;
 

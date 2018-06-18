@@ -26,11 +26,11 @@
         </tr>
     </table>
 
-        <tr>
-            <td><a href="/showTrans">Show transactions</a></td>
-            <td><a href="home">Home</a></td>
-            <td><a href="/logout">Logout</a></td>
-        </tr>
+    <tr>
+        <td><a href="/showTrans">Show transactions</a></td>
+        <td><a href="home">Home</a></td>
+        <td><a href="/logout">Logout</a></td>
+    </tr>
     </table>
 </div>
 </body>

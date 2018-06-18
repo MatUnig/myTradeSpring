@@ -50,10 +50,10 @@
         <input type="hidden" name="product" value="${product}"/>
         <input type="hidden" name="fromCurrency" value="${fromCurrency}"/>
         <input type="hidden" name="toCurrency" value="${toCurrency}"/>
-        <input type="submit" name="buyButton"  value="Buy"/>
+        <input type="submit" name="buyButton" value="Buy"/>
     </form>
     <%--<form method="post" action="sellProduct">--%>
-        <%--<input type="submit" name="sellButton" value="Sell"/>--%>
+    <%--<input type="submit" name="sellButton" value="Sell"/>--%>
     <%--</form>--%>
 </div>
 </p>

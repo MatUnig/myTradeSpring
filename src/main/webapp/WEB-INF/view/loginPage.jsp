@@ -1,4 +1,4 @@
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 
 <%--
   Created by IntelliJ IDEA.
@@ -20,8 +20,12 @@
 </head>
 <body>
 <%@include file="header.jsp" %>
-<c:if test="${not empty error}"><div>${error}</div></c:if>
-<c:if test="${not empty message}"><div>${message}</div></c:if>
+<c:if test="${not empty error}">
+    <div>${error}</div>
+</c:if>
+<c:if test="${not empty message}">
+    <div>${message}</div>
+</c:if>
 </br>
 <div>
     <div class="container">
@@ -35,16 +39,17 @@
                         <form name='login' action="<c:url value='/loginPage' />" method='POST'>
                             <div class="form-group">
                                 <label path="username" class="col-sm-3 control-label">
-                                    </label>
+                                </label>
                                 <div class="col-sm-6">
                                     <input type="text" path="username" name="username" class="form-control"
                                            id="username" placeholder="Login"/>
                                     <errors path="username" name="username" id="username"/>
                                 </div>
-                            </div></br>
+                            </div>
+                            </br>
                             <div class="form-group">
-                                <label  path="password" class="col-sm-3 control-label">
-                                    </label>
+                                <label path="password" class="col-sm-3 control-label">
+                                </label>
                                 <div class="col-lg-6 col-lg-offset-3 text-center">
                                     <input type="password" path="password" name="password" class="form-control"
                                            id="password" placeholder="Password"/>
@@ -57,10 +62,12 @@
                                         <input type="hidden"
                                                name="${_csrf.parameterName}"
                                                value="${_csrf.token}"/>
-                                        Sign in</button>
+                                        Sign in
+                                    </button>
                                     <button type="reset" name="login" class="btn btn-default btn-sm">
                                         Reset
-                                    </button></br>
+                                    </button>
+                                    </br>
                                 </div>
                             </div>
                         </form>

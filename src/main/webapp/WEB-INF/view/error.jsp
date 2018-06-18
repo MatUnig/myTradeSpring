@@ -7,7 +7,7 @@
 <head>
     <meta charset="utf-8">
     <title>(404) The page you were looking for doesn't exist.</title>
-    <link rel="stylesheet" type="text/css" href="//cloud.typography.com/746852/739588/css/fonts.css" />
+    <link rel="stylesheet" type="text/css" href="//cloud.typography.com/746852/739588/css/fonts.css"/>
     <link href="css/404.css" rel="stylesheet">
 </head>
 <div class="error-container">

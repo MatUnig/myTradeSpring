@@ -22,7 +22,7 @@ public class Transaction {
     private String status;
     private LocalDateTime date;
     @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name="user_id")
+    @JoinColumn(name = "user_id")
     private User user;
 
     public User getUser() {

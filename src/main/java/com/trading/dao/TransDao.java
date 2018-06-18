@@ -10,9 +10,13 @@ import java.util.List;
 
 public interface TransDao {
     void buy(@AuthenticationPrincipal CurrentUser customUser, Transaction transaction, HttpServletRequest request);
+
     void sell(Transaction transaction, HttpServletRequest request);
+
     List getTrans(CurrentUser customUser);
+
     Transaction applyChanges(Transaction transaction);
+
     Transaction findById(int id);
-    }
+}
 
