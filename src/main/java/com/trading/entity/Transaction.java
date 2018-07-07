@@ -49,13 +49,6 @@ public class Transaction {
         this.status = status;
     }
 
-
-//    private LocalDateTime updated;
-//    @PreUpdate  - wlacza sie przed zrobieniem updatu
-//    protect void onUpdate(){
-//        updated= LocalDateTime.now();
-//    }
-
     public double getQuantity() {
         return quantity;
     }

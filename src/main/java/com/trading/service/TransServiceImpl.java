@@ -11,8 +11,7 @@ import java.util.List;
 
 @Service
 public class TransServiceImpl implements TransService {
-//    @Autowired
-//    public TransDao transDao;
+
     private TransDao transDao;
 
     public TransServiceImpl(TransDao transDao) {
@@ -35,9 +34,13 @@ public class TransServiceImpl implements TransService {
     }
 
     @Override
-    public Transaction applyChanges(Transaction transaction){ return transDao.applyChanges(transaction);}
+    public Transaction applyChanges(Transaction transaction) {
+        return transDao.applyChanges(transaction);
+    }
 
     @Override
-    public Transaction findById(int id){ return transDao.findById(id);  }
+    public Transaction findById(int id) {
+        return transDao.findById(id);
+    }
 
 }

@@ -23,14 +23,6 @@ public class HomeController {
         return "techTrade";
     }
 
-//    @RequestMapping(value = {"/error"}, method = RequestMethod.GET)
-//    public String handleError() {
-//        return "error";
-//    }
-//    @Override
-//    public String getErrorPath() {
-//        return "/error";
-//    }
     @ExceptionHandler(ResourceNotFoundException.class)
     public String handleResourceNotFoundException() {
         return "error";

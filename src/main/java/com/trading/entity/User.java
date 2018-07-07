@@ -22,7 +22,6 @@ public class User {
     private String surname;
     @Column(name = "Email")
     @NotBlank
-//    @Email
     private String email;
     @Column(length = 30)
     @NotBlank
