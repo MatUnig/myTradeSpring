@@ -26,18 +26,6 @@ public class UserDaoImpl implements UserDao {
         entityManager.persist(newUser);
     }
 
-//    @Override
-//    public User validateUser(Login login) {
-//        String username = login.getUsername();
-//        String password = login.getPassword();
-//        TypedQuery<User> query = entityManager.createQuery("select e from User e where e.username = ?1 and e.password = ?2", User.class);
-//        query.setParameter(1, username);
-//        query.setParameter(2, password);
-//        if (query.getResultList().size() > 0) {
-//            return query.getResultList().get(0);
-//        } else return null;
-//    }
-
     @Override
     public User applyChanges(User user) {
         return entityManager.merge(user);

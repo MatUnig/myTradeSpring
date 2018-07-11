@@ -18,11 +18,11 @@ import java.util.List;
 @Transactional
 public class TransDaoImpl implements TransDao {
 
+    private final TransactionRepository transactionRepository;
+
     public TransDaoImpl(TransactionRepository transactionRepository) {
         this.transactionRepository = transactionRepository;
     }
-
-    private final TransactionRepository transactionRepository;
 
     @PersistenceContext
     EntityManager entityManager;
@@ -41,15 +41,12 @@ public class TransDaoImpl implements TransDao {
         trans.setQuantity(Double.parseDouble(request.getParameter("quantity")));
         trans.setPrice(Double.parseDouble(request.getParameter("price")));
         trans.setUser(currentUser);
-        System.out.println(currentUser.getName());
-        System.out.println(currentUser.getBalance());
-        System.out.println(currentUser.getId());
         transactionRepository.save(trans);
     }
 
     @Override
     public void sell(Transaction transaction, HttpServletRequest request) {
-
+        //needs to be implemented
     }
 
     @Override
