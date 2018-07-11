@@ -62,6 +62,5 @@ public class CurrencyRespositoryTest {
         List<Currency> curr = currencyRespository.findBySome("e");
         //then
         assertEquals(2,curr.size());
-
     }
 }
