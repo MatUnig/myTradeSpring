@@ -20,12 +20,6 @@ Check the history, close transactions and earn "money" :)!
 ![alt tag](https://i.imgur.com/k5Ep68D.png "Win")
 
 
-## Release History
-
-* 1.0
-  Moved from Maven project to Spring Boot Application.
-
-
 ## Meta
 
 Creator:
